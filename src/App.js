@@ -28,8 +28,16 @@ class App extends React.Component {
     }
   };
 
+  clearCompleted = () => {
+    this.setState({
+      todos: this.state.todos.filter(todo => {
+        return !todo.completed;
+      })
+    });
+  }
+
   toggleTask = id => {
-    console.log(id);
+    console.log(this.id);
   };
 
   render() {
@@ -37,7 +45,7 @@ class App extends React.Component {
       <div>
         <h2>Welcome to {this.state.name}'s Todo App!</h2>
         <TodoList todos={this.state.todos} toggleTask={this.toggleTask} />
-        <TodoForm submitTodo={this.submitTodo}/>
+        <TodoForm submitTodo={this.submitTodo} clearCompleted={this.clearCompleted}/>
       </div>
     );
   };
