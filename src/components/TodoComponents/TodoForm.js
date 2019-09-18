@@ -16,7 +16,7 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.props.submitTodo}>
+            <form className="todo-form" onSubmit={this.props.submitTodo}>
                 <input
                     type="text"
                     placeholder="Type Todo"

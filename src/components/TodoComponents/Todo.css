@@ -1,3 +1,31 @@
 .completed {
     text-decoration: line-through;
 }
+
+.todo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: darkgrey;
+    margin: auto;
+    border: 2px solid grey;
+    min-height: 600px;
+    max-width: 1200px;
+}
+
+.todo {
+    max-width: 300px;
+    max-height: fit-content;
+    word-wrap: break-word;
+}
+
+.todo-div {
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 5px !important;
+}
+
+.todo-form {
+    max-width: 1200px;
+    margin: 1% auto;
+}
