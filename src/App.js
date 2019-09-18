@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: "Taran",
+      name: "Taran Neeld",
       todos: []
     };
   };
